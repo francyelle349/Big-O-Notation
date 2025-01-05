@@ -69,3 +69,84 @@ Key Characteristics of 𝑂(N)
         System.out.println("Sum of array elements: " + sum);
         }
         }
+
+O(N²)
+
+The runtime of the Algorithm grows quadratically with the size of the input.
+This occurs when you have nested loops, where the inner loop iterates through all or most of the elements for every iteration of the outer of loop.
+
+Real-World Analogy
+
+Imagine a group of students where every student has to greet every other student. If there are 5 students, there will be 5×5=25 greetings. If the group size increases, the total greetings grow quadratically.
+
+    public class Example2 {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4};
+
+        // Nested loops (O(N²))
+        for (int i = 0; i < numbers.length; i++) { // Outer loop
+            for (int j = 0; j < numbers.length; j++) { // Inner loop
+                System.out.println("Pair: (" + numbers[i] + ", " + numbers[j] + ")");
+            }
+        }
+    }
+    }
+
+
+O(N³)
+represents algorithms whose runtime grows cubically with the size of the input.
+
+Example
+
+       public class Example2 {
+    public static void main(String[] args) {
+       int n = 3;
+        // Triple nested loops 
+        for (int i = 0; i < n; i++) { // Outer loop
+            for (int j = 0; j < n; j++) { // Middle loop
+                for (int k = 0; k < n; k++) { // Inner loop
+                    System.out.println(" (" + i + ", " + j + ", " + k + ")");
+                }
+            }
+        }
+    }
+}
+O(n * m)
+
+Traversing a rectangular grid
+
+Its used with a scenario where two dimensions need to be processed, such as traversing elements in a rectangular grid with N rows and M columns.
+
+Key Characteristics 
+- Two Nested Loops
+- Grid-like Strcutures (2d arrays, or any DS represeting a rectangular region)
+
+### Example
+
+      public class Example2 {
+    public static void main(String[] args) {
+        int[][] grid = {{1,2,3}, {1,2,3}};
+
+
+        for(int i = 0; i < grid.length; i++){ outer loop N rows
+            for(int j = 0; j < grid[i].length;j++){ inner loop M columns
+                System.out.print("("+grid[i][j]+")");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Pratical Examples
+- Matrix operations and Image Operations
+
+
+O(log n)
+
+O(n log n)
+
+O(2n)
+
+
+
+
