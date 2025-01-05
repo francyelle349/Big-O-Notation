@@ -36,3 +36,36 @@ public class Example {
         System.out.println("Updated value at index " + index + ": " + numbers[index]);
     }
 }
+
+O(N) - 
+
+Called linear time complexity, basically describes an algorithm or operation whose execution time grows linearly to the size of the Input N. 
+
+Key Characteristics of 𝑂(N)
+
+- Direct relationship with the input size: If the input size doubles, this means the execution time it will double too.
+- Iterative processes: Operations that evolves traversing or processing every element of the list typically is O(N) complexity.
+- Example in DS:
+-     Linear Search
+-     Summing Array Elements
+-      Finding the Maximum Element in an Array
+-      copying a List
+
+### Example code in Java:
+
+
+        public class Example {
+            public static void main(String[] args) {
+        
+        int[] numbers = {10, 20, 30, 40, 50};
+        
+        // Summing up
+        int sum = 0;
+        for (int number : numbers) { // This loop runs N times
+            sum += number;
+        }
+
+        // Displaying 
+        System.out.println("Sum of array elements: " + sum);
+        }
+        }
